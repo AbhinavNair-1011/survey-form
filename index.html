@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+ <title>FreeCodeCamp Survey Form</title>
+ <style>
+
+    body{
+        background:linear-gradient(135deg,green,red,yellow,cyan,purple,black,green,orange,grey,burlywood);
+      }
+      
+      
+       #title{
+         text-align:center;
+         color:rgb(128, 162, 173);
+         text-shadow:2px 2px black;
+       }
+       #description{
+         text-align:center;
+         text-shadow:1px 1px black;
+       }
+      
+      #survey-form{
+        background-color:rgba(96, 110, 110, 0.511);
+       height:max-content;
+       width:75% ;
+       margin:auto;
+       max-width:640px;
+       padding:15px;
+       border-radius:8px;
+       
+       }
+      
+       label{
+      
+        display:block;
+         color:rgb(228, 252, 199);
+       }
+       select{
+         background-color:rgb(16, 45, 13);
+         color:rgb(186, 180, 168);
+         width:70%;
+         height:35px;
+         font-size:11px;
+       }
+       .feedback select{
+         display:block;
+         width:70%;
+       }
+      .user-info input {
+         display:block;
+         width:100%;
+         height:35px;
+         background-color:rgb(16, 45, 13);
+         color:rgb(169, 117, 12);
+      font-size:12px;
+       }
+      .user-info label{
+        padding:10px;
+      font-size:20px;
+      }
+      fieldset{
+        padding:10px;
+        margin:10px;
+        border:double;
+        border-color:rgb(144, 144, 176);
+        border-radius:40px;
+      }
+      .feedback label{
+        padding:5px;
+      }
+      #rec{
+        font-size:20px;
+        padding-top:20px;
+      }
+      #impro{
+        font-size:20px;
+        padding-top:28px;
+      }
+      #comments {
+        padding-top:20px;
+      }
+      textarea{
+        width:100%;
+        height:150px;
+        margin-top:6px;
+        font-size:20px;
+      }
+      #fsubmit{
+        text-align:center;
+        width:200px;
+        margin:30px auto 0 auto;
+      
+      }
+      #fsubmit input{
+       width:200px;
+       height:40px;
+       background-color:rgb(66, 5, 5);
+       color:rgb(213, 210, 210);
+       font-size:20px;
+        }
+ </style>
+   </head>
+<body>
+
+<h1 id="title">Survey Form</h1>
+
+<p id="description">Please enter the details below</p>
+
+<form id="survey-form"> 
+<fieldset class="user-info">
+<label id="name-label">NAME: <input type="text" id="name" required placeholder="Enter Your Full Name"></label>
+  <label id="email-label">EMAIL: <input type="email" id="email" required placeholder="Enter Your Email"></label>
+  <label id="number-label">AGE: <input type="number" id="number" required min="18" max="60" placeholder="Enter Your Age"></label>
+
+ <label> What Do You Do For a Living:
+    <select id="dropdown"> 
+      <option>Select an option</option>
+      <option>Student</option>
+      <option>Salaried</option>
+      <option>Prefer not to say</option>
+      </select>
+  </label>
+   </fieldset>
+
+<fieldset class="feedback">
+  <label>So What Do You Think About FreeCodeCamp:<select>
+    <option>Select an option</option>
+    <option>Its awesome</option>
+    <option>Umm its okay</option>
+    <option>Not that good</option>
+    <option>Just down bad</option>
+    </select>
+    </label>
+
+    
+<label>Which feature intrests you the most in freeCodeCamp?<select>
+  <option>Select an option</option>
+  <option>Challenges</option>
+  <option>Project</option>
+  <option>Community</option>
+  <option>Open source</option>
+  </select>
+  </label>
+ 
+
+
+ 
+<label id="rec">Would you recommend FreeCodecamp to your friend</label>
+
+<label><input type="radio" name="usage" value="11">Definitly</label>
+<label><input type="radio" name="usage" value="22">Not sure</label>
+<label><input type="radio" name="usage" value="33">Not recommendable</label>
+<label id="impro">What would you like us to improve(check al that applies) </label>
+<label><input type="checkbox" value="1">Frontend-project</label>
+<label><input type="checkbox" value="2">Backend-project</label>
+<label><input type="checkbox"value="3">Videos</label>
+<label><input type="checkbox"value="4">Data visualiasation</label>
+<label><input type="checkbox"value="5">Forum</label>
+<label><input type="checkbox"value="6">Wiki</label>
+<label><input type="checkbox"value="7">Quiz</label>
+
+ <label id="comments">ANY COMMENTS OR SUGGESTION? <textarea placeholder="type here"></textarea >
+  </fieldset>
+  <fieldset id="fsubmit">
+  <input type="submit" id="submit"> 
+    </fieldset>
+
+</form>
+
+
+
+</body>
+  </html>
+
